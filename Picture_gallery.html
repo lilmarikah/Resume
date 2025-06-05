@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            background: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #2b463c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #688f4e;
+        }
+
+        .back-button i {
+            margin-right: 8px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px; 
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            object-fit: contain;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+            
+        .gallery img:hover {
+            z-index: 9;
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        h1 {
+            color: #2b463c;
+            text-align: center;
+            margin: 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #688f4e;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="Resume.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>Back to the Resume
+    </a>
+
+    <h1>My Creative Works</h1>
+
+    <div class="gallery">
+        <a href="./Pictures/Rose.jpg" target="_blank"><img src="./Pictures/Rose.jpg" alt="Creative work 1"></a>
+        <a href="./Pictures/Penguin.jpg" target="_blank"><img src="./Pictures/Penguin.jpg" alt="Creative work 2"></a>
+        <a href="./Pictures/Leaf.jpg" target="_blank"><img src="./Pictures/Leaf.jpg" alt="Creative work 3"></a>
+        <a href="./Pictures/Mountain.jpg" target="_blank"><img src="./Pictures/Mountain.jpg" alt="Creative work 4"></a>
+        <a href="./Pictures/Cat.jpg" target="_blank"><img src="./Pictures/Cat.jpg" alt="Creative work 5"></a>
+        <a href="./Pictures/Sky.jpg" target="_blank"><img src="./Pictures/Sky.jpg" alt="Creative work 6"></a>
+        <a href="./Pictures/Asune.jpg" target="_blank"><img src="./Pictures/Asune.jpg" alt="Creative work 7"></a>
+        <a href="./Pictures/Castle.jpg" target="_blank"><img src="./Pictures/Castle.jpg" alt="Creative work 8"></a>
+        <a href="./Pictures/Eyes.jpg" target="_blank"><img src="./Pictures/Eyes.jpg" alt="Creative work 9"></a>
+    </div>
+</body>
+</html>
