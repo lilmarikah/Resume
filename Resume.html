@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariotti Lili - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .left-side {
+            background: #2b463c;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .profile {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .profile h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .title {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            border-bottom: 2px solid #688f4e;
+            padding-bottom: 5px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info ul li i {
+            margin-right: 15px;
+            color: #688f4e;
+            width: 20px;
+            text-align: center;
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills .skill-name {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 10px;
+            margin-top: 5px;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background-color: #688f4e;
+            width: 0%;
+            border-radius: 10px;
+        }
+
+        .languages {
+            margin-top: 30px;
+        }
+
+        .languages ul {
+            list-style: none;
+        }
+
+        .languages ul li {
+            margin-bottom: 10px;
+        }
+
+        .right-side {
+            padding: 40px;
+        }
+
+        .about {
+            margin-bottom: 40px;
+        }
+
+        .about h2 {
+            color: #2b463c;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #688f4e;
+            padding-bottom: 5px;
+        }
+
+        .about p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .education, .experience {
+            margin-bottom: 40px;
+        }
+
+        .box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .year-company {
+            min-width: 150px;
+        }
+
+        .year-company h5 {
+            color: #2b463c;
+            font-weight: 600;
+        }
+
+        .text h4 {
+            color: #2b463c;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .text p {
+            margin-bottom: 10px;
+        }
+
+        .text ul {
+            padding-left: 20px;
+        }
+
+        .text ul li {
+            margin-bottom: 5px;
+        }
+
+        .hobbies {
+            margin-top: 40px;
+        }
+
+        .hobbies ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+            gap: 60px;
+        }
+
+        .hobbies ul li {
+            text-align: center;
+            flex: 0 0 auto;
+        }
+
+        .hobbies ul li a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hobbies ul li i {
+            font-size: 2em;
+            color: #688f4e;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #9ec584;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #fefefe;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hobbies ul {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="profile">
+                <h1>Mariotti Lili</h1>
+            </div>
+
+            <div class="contact-info">
+                <h2 class="title">Contact Info</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+36 20 358 7234</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>lilidomoszlai7@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><a href="https://www.google.com/maps/place/Eger" target="_blank">Eger, Hungary</a></span>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <span><a href="https://github.com/MariottiLili" target="_blank">GitHub Profile</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h2 class="title">Technical Skills</h2>
+                <ul>
+                    <li>
+                        <span class="skill-name">C#</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+                    </li>
+                    <li>
+                        <span class="skill-name">HTML / CSS</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Git, VS Code</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+                    </li>
+                    <li>
+                        <span class="skill-name">MySQL / phpMyAdmin</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Word, Excel, PowerPoint, Canva</span>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                    </li>
+                </ul>
+            </div>            
+
+            <div class="skills">
+                <h2 class="title">Soft Skills</h2>
+                <ul>
+                    <li>Problem-solving</li>
+                    <li>Precision</li>
+                    <li>Willingness to learn</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+
+            <div class="languages">
+                <h2 class="title">Languages</h2>
+                <ul>
+                    <li>English - Intermediate (B2)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="about">
+                <h2>Profile</h2>
+                <p>I am a motivated computer science student currently studying Software Engineering at <a href="https://uni-eszterhazy.hu/en" target="_blank">Eszterházy Károly Catholic University</a>. I am seeking an internship or part-time position where I can apply the knowledge I have gained during my studies, gain hands-on experience, and explore new areas of the field—ideally in a remote or hybrid work environment.</p>
+                <p>I am reliable and adaptable, able to work well both independently and as part of a team. I have a confident command of the English language, both spoken and written.</p>
+                <p><strong>Active full-time student</strong></p>
+            </div>
+
+            <div class="education">
+                <h2>Education</h2>
+                <div class="box">
+                    <div class="year-company">
+                        <h5>2022 - Present</h5>
+                    </div>
+                    <div class="text">
+                        <h4>BSc in Computer Science</h4>
+                        <p><a href="https://uni-eszterhazy.hu/en" target="_blank">Eszterházy Károly Catholic University</a> – Eger</p>
+                        <h5>Projects:</h5>
+                        <ul>
+                            <li>Veterinary Clinic System (Java + Spring Boot)</li>
+                            <li>Digital Aquarium Simulator (phpMyAdmin + C# + WPF)</li>
+                            <li>Automated Testing (Cypress)</li>
+                            <li>Logic Puzzle Solver: Jealous Husbands problem (C# + Forms)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year-company">
+                        <h5>2017 - 2022</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Tourism Specialist – Graduation</h4>
+                        <p><a href="https://andrassy-eger.hu/cms/en-1" target="_blank">Andrássy György Catholic Business High School</a> – Eger</p>
+                        <ul>
+                            <li>Advanced level exams in English and Informatics</li>
+                            <li>Erasmus+ Internship: Tourism practice in Rostock, Germany (2021)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience">
+                <h2>Work Experience</h2>
+                <div class="box">
+                    <div class="year-company">
+                        <h5>Jan 2024 – Sep 2024</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Receptionist - Part-time job</h4>
+                        <p>NIYODO Fitness & Gym, Eger</p>
+                        <ul>
+                            <li>Managed daily operations, customer service, cash register</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year-company">
+                        <h5>Jan 2020 – Dec 2023</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Wine Hospitality Assistant - Part-time job</h4>
+                        <p><a href="https://bolykipinceszet.hu/en/" target="_blank">Bolyki Winery</a>, Eger</p>
+                        <ul>
+                            <li>Provided guest service with flexibility and a strong sense of responsibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-ranking-star"></i>
+                        <p>Sports</p>
+                    </li>
+                    <li>
+                        <a href="Picture_gallery.html">
+                            <i class="fas fa-paint-brush"></i>
+                            <p>Creative activities</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
